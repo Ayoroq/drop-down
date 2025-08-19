@@ -1,17 +1,16 @@
 function toggleDropdown() {
   const dropdownButton = document.querySelector(".dropdown-button");
   const dropdownContent = document.querySelector(".dropdown-content");
-  const dropdownItems = document.querySelectorAll(".dropdown-option");
 
-  dropdownButton.addEventListener("click", () => {
-    dropdownContent.classList.toggle("hidden");
+  document.addEventListener("click", (event) => {
+    if (event.target.matches(".dropdown-button")) {
+      dropdownContent.classList.toggle("hidden");
+    } else if (event.target.matches(".dropdown-option")) {
+      dropdownContent.classList.add("hidden");
+    } else if (!dropdownButton.contains(event.target) && !dropdownContent.contains(event.target)) {
+      dropdownContent.classList.add("hidden");
+    }
   });
-
-    dropdownItems.forEach((item) => {
-        item.addEventListener("click", () => {
-        dropdownContent.classList.add("hidden");
-        });
-    });
 }
 
 export { toggleDropdown };
