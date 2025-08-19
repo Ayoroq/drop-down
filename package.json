@@ -1,15 +1,16 @@
 {
-  "name": "drop-down",
+  "name": "03-init-dropdown",
   "version": "1.0.0",
-  "description": "",
+  "description": "This is used to initialize dropdown menus with click-to-toggle, option selection, and click-outside-to-close functionality",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack serve --open --config webpack.dev.js",
     "build": "webpack --config webpack.prod.js"
   },
-  "keywords": [],
-  "author": "Roqeeb Olaniyi",
+  "keywords": ["dropdown", "javascript", "vanilla", "component", "ui", "menu"],
+  "author": "Roqeeb Olaniyi <Ayoroq@gmail.com>",
+  "git repository": "(https://github.com/Ayoroq/drop-down.git)",
   "license": "ISC",
   "devDependencies": {
     "css-loader": "^7.1.2",
