@@ -1,5 +1,5 @@
 import './style.css';
 import './reset.css';
-import { toggleDropdown } from './module.js';
+import { initDropdown } from './module.js';
 
-toggleDropdown();
+initDropdown();
